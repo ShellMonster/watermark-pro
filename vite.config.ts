@@ -92,10 +92,8 @@ export default defineConfig({
       '@': path.resolve(__dirname, './src'),
     },
   },
-  // 生产环境使用 CDN
-  base: process.env.NODE_ENV === 'production'
-    ? 'https://cdn.jsdelivr.net/gh/turkyden/watermark-pro@gh-pages/'
-    : '/',
+  // 使用相对路径，支持部署到任意服务器
+  base: './',
   build: {
     // 代码分割配置
     rollupOptions: {

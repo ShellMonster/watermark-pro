@@ -98,35 +98,13 @@ export default defineConfig({
     // 代码分割配置
     rollupOptions: {
       output: {
-        manualChunks(id) {
-          if (id.includes('node_modules')) {
-            // React 核心库
-            if (id.includes('react-dom')) {
-              return 'react-dom';
-            }
-            if (id.includes('react')) {
-              return 'react';
-            }
-            // Ant Design 图标单独打包（体积较大）
-            if (id.includes('@ant-design/icons')) {
-              return 'antd-icons';
-            }
-            // Ant Design 核心拆分
-            if (id.includes('antd') || id.includes('@ant-design')) {
-              return 'antd';
-            }
-            // 工具库
-            if (id.includes('jszip')) {
-              return 'jszip';
-            }
-            if (id.includes('file-saver')) {
-              return 'file-saver';
-            }
-            // ahooks
-            if (id.includes('ahooks')) {
-              return 'ahooks';
-            }
-          }
+        manualChunks: {
+          // React 相关放一起，确保加载顺序
+          'vendor-react': ['react', 'react-dom'],
+          // Ant Design 相关
+          'vendor-antd': ['antd', '@ant-design/icons'],
+          // 工具库（不依赖 React）
+          'vendor-utils': ['jszip', 'file-saver'],
         },
       },
     },
@@ -135,7 +113,7 @@ export default defineConfig({
     // 静态资源内联阈值
     assetsInlineLimit: 4096,
     // 提高警告阈值（Ant Design 核心库约 620KB，这是框架本身的体积）
-    chunkSizeWarningLimit: 650,
+    chunkSizeWarningLimit: 700,
   },
   // 开发服务器配置
   server: {

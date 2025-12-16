@@ -1,7 +1,8 @@
 import React from 'react';
 import { GithubOutlined } from '@ant-design/icons';
-import Wechat from '@/assets/wechat.png';
-import Alipay from '@/assets/alipay.png';
+
+// Vite 资源导入方式
+const weixinImage = new URL('@/assets/weixin.jpeg', import.meta.url).href;
 
 export const Market: React.FC = () => {
   return (
@@ -43,7 +44,7 @@ export const Market: React.FC = () => {
                 />
                 <div className="p-6">
                   <h2 className="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">
-                    CATEGORY
+                    新闻资讯
                   </h2>
                   <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
                     新闻：身份证复印件被盗用所造成的损失，你想象不到！
@@ -113,7 +114,7 @@ export const Market: React.FC = () => {
                 />
                 <div className="p-6">
                   <h2 className="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">
-                    CATEGORY
+                    新闻资讯
                   </h2>
                   <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
                     百科：为什么身份证复印件要加水印？避免证件被盗用，这样加水印才安全
@@ -183,7 +184,7 @@ export const Market: React.FC = () => {
                 />
                 <div className="p-6">
                   <h2 className="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">
-                    CATEGORY
+                    新闻资讯
                   </h2>
                   <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
                     知乎：身份证复印件给别人怎么避免安全问题？涉及的法律纠纷有哪些？
@@ -377,7 +378,7 @@ export const Market: React.FC = () => {
             className="flex justify-center items-center w-32 text-center mx-auto mt-16 text-white bg-indigo-500 border-0 py-2 focus:outline-none hover:bg-indigo-600 rounded-full text-lg"
           >
             <GithubOutlined />
-            <span className="pl-2">Resource</span>
+            <span className="pl-2">源代码</span>
           </a>
         </div>
       </section>
@@ -400,7 +401,7 @@ export const Market: React.FC = () => {
         <div className="w-64 p-4 m-auto shadow-xl">
           <img
             className="w-full rounded"
-            src={require('../../assets/weixin.jpeg')}
+            src={weixinImage}
             alt="buymeacoffee"
           />
         </div>

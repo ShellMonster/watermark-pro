@@ -71,8 +71,9 @@ A pure front-end watermark tool for your sensitive certificates, no upload requi
 - [x] Ctrl+V 粘贴上传 ✨ **新增**
 - [x] 拖拽上传 ✨ **新增**
 - [x] 触摸手势 ✨ **新增**
+- [x] PWA 支持（可安装为桌面/手机 App）✨ **新增**
+- [x] 离线使用 ✨ **新增**
 - [ ] 马赛克 Mosaic
-- [ ] 桌面端 Desktop
 
 ### 快速开始
 
@@ -160,8 +161,9 @@ This PR includes a comprehensive refactoring and optimization based on the origi
 - [x] Ctrl+V Paste Upload ✨ **New**
 - [x] Drag & Drop Upload ✨ **New**
 - [x] Touch Gestures ✨ **New**
+- [x] PWA Support (Installable as Desktop/Mobile App) ✨ **New**
+- [x] Offline Support ✨ **New**
 - [ ] Mosaic
-- [ ] Desktop
 
 ### Quick Start
 

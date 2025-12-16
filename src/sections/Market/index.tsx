@@ -386,8 +386,8 @@ export const Market: React.FC = () => {
       <section className="w-full pb-32">
         <h2 className="text-3xl text-center">参与贡献</h2>
         <p className="text-center py-2">感谢以下开发者的积极贡献！</p>
-        <div className="text-center pt-4">
-          <img src="https://contrib.rocks/image?repo=Turkyden/watermark-pro" />
+        <div className="flex justify-center pt-4">
+          <img src="https://contrib.rocks/image?repo=Turkyden/watermark-pro" alt="贡献者" />
         </div>
       </section>
 

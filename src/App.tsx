@@ -621,8 +621,8 @@ export default function App() {
             className="relative"
             style={{ transform: `scale(${scale / 100})` }}
           >
-            <div className="text-gray-800 text-base md:text-xl absolute -top-10 left-0">
-              <span className="inline-block p-2 truncate max-w-xs">{fileName}</span>
+            <div className="absolute -top-10 left-0">
+              <span className="inline-block px-3 py-1 text-base md:text-lg font-semibold text-gray-700 bg-white/80 rounded shadow-sm truncate max-w-xs">{fileName}</span>
             </div>
             <Watermark url={previewImage} options={options} />
           </div>

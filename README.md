@@ -63,15 +63,15 @@ A pure front-end watermark tool for your sensitive certificates, no upload requi
 
 ### 功能特性
 
-- [x] 栅格系统 Grid System
-- [x] 水印 WaterMark
-- [x] 马赛克 Mosaic
-- [x] 整图水印 WaterMark Whole Page
-- [x] 多文件 Multi File
-- [x] 移动端 Mobile ✨ **新增**
+- [x] 平铺水印 Tiled Watermark
+- [x] 多文件批量处理 Multi File
+- [x] 批量导出 ZIP Batch Export
+- [x] 画布缩放 Canvas Zoom
+- [x] 移动端响应式 Mobile ✨ **新增**
 - [x] Ctrl+V 粘贴上传 ✨ **新增**
 - [x] 拖拽上传 ✨ **新增**
 - [x] 触摸手势 ✨ **新增**
+- [ ] 马赛克 Mosaic
 - [ ] 桌面端 Desktop
 
 ### 快速开始
@@ -152,15 +152,15 @@ This PR includes a comprehensive refactoring and optimization based on the origi
 
 ### Features
 
-- [x] Grid System
-- [x] WaterMark
-- [x] Mosaic
-- [x] WaterMark Whole Page
-- [x] Multi File
-- [x] Mobile ✨ **New**
+- [x] Tiled Watermark
+- [x] Multi File Processing
+- [x] Batch Export ZIP
+- [x] Canvas Zoom
+- [x] Mobile Responsive ✨ **New**
 - [x] Ctrl+V Paste Upload ✨ **New**
 - [x] Drag & Drop Upload ✨ **New**
 - [x] Touch Gestures ✨ **New**
+- [ ] Mosaic
 - [ ] Desktop
 
 ### Quick Start

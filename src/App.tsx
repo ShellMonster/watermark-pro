@@ -476,7 +476,8 @@ export default function App() {
       layout="vertical"
       initialValues={defaultOptions}
       onValuesChange={handleFormChange}
-      size="small"
+      size="middle"
+      className="text-base"
     >
       <Form.Item label="水印文字" name="text">
         <Input.TextArea rows={2} placeholder="请输入水印文字" />

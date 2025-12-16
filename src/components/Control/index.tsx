@@ -30,24 +30,24 @@ export const Control: React.FC<ControlsProps> = ({
       handle={handle}
       {...draggableProps}
     >
-      <div className="absolute z-50 top-0 right-0 w-64 px-4 bg-white rounded-md shadow-lg">
-        <div className="flex justify-between items-center py-2 text-gray-500 select-none">
+      <div className="absolute z-50 top-0 right-0 w-72 px-5 bg-white rounded-md shadow-lg">
+        <div className="flex justify-between items-center py-3 text-gray-500 select-none">
           {React.createElement(
             collapsed ? CaretDownOutlined : CaretUpOutlined,
-            { onClick: handleCollapse },
+            { onClick: handleCollapse, className: 'text-lg' },
           )}
           <span
             id="react_control_handle"
-            className="text-lg"
+            className="text-xl"
             style={{ cursor: 'grab' }}
           >
             : : :
           </span>
-          <SearchOutlined />
+          <SearchOutlined className="text-lg" />
         </div>
-        <div className={[collapsed ? 'block' : 'hidden', 'pb-4'].join(' ')}>
+        <div className={[collapsed ? 'block' : 'hidden', 'pb-5'].join(' ')}>
           <div className="flex justify-center items-center">
-            <div className="text-base pb-2 text-gray-600 font-semibold font-sans">
+            <div className="text-lg pb-3 text-gray-600 font-semibold font-sans">
               {title}
             </div>
           </div>

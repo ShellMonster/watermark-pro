@@ -71,6 +71,7 @@ export interface ScalerAction {
   onZoomDown: () => void;
   onReset: () => void;
   onWheel: (event: WheelEvent | React.WheelEvent) => void;
+  setScaleValue: (value: number) => void;
 }
 
 /**

@@ -31,6 +31,11 @@ export default function useScaler(initial: number): [number, ScalerAction] {
     setScale(initial);
   }, [initial]);
 
+  // 直接设置缩放值
+  const setScaleValue = useCallback((value: number) => {
+    setScale(Math.min(200, Math.max(10, value)));
+  }, []);
+
   // 滚轮缩放
   const onWheel = useCallback((event: WheelEvent | React.WheelEvent) => {
     if (!event.ctrlKey && !event.metaKey) return;
@@ -88,7 +93,7 @@ export default function useScaler(initial: number): [number, ScalerAction] {
     };
   }, []);
 
-  return [scale, { onZoomUp, onZoomDown, onReset, onWheel }];
+  return [scale, { onZoomUp, onZoomDown, onReset, onWheel, setScaleValue }];
 }
 
 // 同时导出类型

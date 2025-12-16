@@ -56,7 +56,6 @@ const ReactWatermark: React.FC<WatermarkProps> = ({
       .draw(url)
       .then(() => {
         hasDrawnRef.current = true;
-        console.log('绘制完成:', url.substring(0, 50));
       })
       .catch((error) => {
         console.error('绘制失败:', error);

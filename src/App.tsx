@@ -361,8 +361,7 @@ export default function App() {
       const newScale = Math.min(200, Math.max(10, scale * pinchScale));
       // 只在变化较大时更新
       if (Math.abs(newScale - scale) > 2) {
-        scaleAction.onReset();
-        // 使用一个临时的方式设置缩放
+        scaleAction.setScaleValue(newScale);
       }
     },
     onSwipe: (direction) => {

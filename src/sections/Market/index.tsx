@@ -57,6 +57,7 @@ export const Market: React.FC = () => {
                       className="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0"
                       href="http://www.360doc.com/content/15/0923/17/22513831_501073654.shtml"
                       target="_blank"
+                      rel="noopener noreferrer"
                     >
                       阅读详情
                       <svg
@@ -127,6 +128,7 @@ export const Market: React.FC = () => {
                       className="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0"
                       href="https://baijiahao.baidu.com/s?id=1648694020038096353&wfr=spider&for=pc"
                       target="_blank"
+                      rel="noopener noreferrer"
                     >
                       阅读详情
                       <svg
@@ -197,6 +199,7 @@ export const Market: React.FC = () => {
                       className="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0"
                       href="https://www.zhihu.com/question/20632460"
                       target="_blank"
+                      rel="noopener noreferrer"
                     >
                       阅读详情
                       <svg
@@ -298,7 +301,7 @@ export const Market: React.FC = () => {
                   <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
                   <path d="M22 4L12 14.01l-3-3"></path>
                 </svg>
-                <span className="title-font font-medium">图片裁剪</span>
+                <span className="title-font font-medium">粘贴上传 (Ctrl+V)</span>
               </div>
             </div>
             <div className="p-2 sm:w-1/2 w-full">

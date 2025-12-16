@@ -103,7 +103,7 @@ export default function App() {
   const [form] = Form.useForm();
 
   // 缩放控制
-  const [scale, scaleAction] = useScaler(60);
+  const [scale, scaleAction] = useScaler(85);
 
   // 响应式检测
   const responsive = useResponsive();
